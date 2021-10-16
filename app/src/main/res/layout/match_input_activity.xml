@@ -8,16 +8,11 @@
     android:orientation="vertical"
     >
 
-    <TextView
+    <TextView style="@style/tv_standard_gray"
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="top"
         android:layout_margintop="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
-        android:layout_marginBottom="5dp"
-
         android:layout_weight="1"
         android:text="TextView" />
     
@@ -37,44 +32,41 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/weighted"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="48dp"
+        android:layout_marginLeft="@dimen/large_margin"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="@dimen/large_margin"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
         android:text="TextView" />
+
     <EditText
         android:id="@+id/EdittextView4"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/weighted"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="48dp"
+        android:layout_marginLeft="@dimen/large_margin"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="@dimen/large_margin"
         android:layout_marginBottom="5dp"
         android:layout_weight="3"
         android:text="EditTextView"
         />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="50dp"
+
+    <Button style="@style/btn_standard_white"
+        android:layout_height="@dimen/weighted"
         android:layout_weight="6"
         android:text="Button"
         />
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/weighted"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="48dp"
+        android:layout_marginLeft="@dimen/large_margin"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="@dimen/large_margin"
         android:layout_marginBottom="20dp"
         android:layout_weight="6"
         android:text="Button"
