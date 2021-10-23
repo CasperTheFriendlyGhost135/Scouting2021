@@ -6,18 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:layout_margin="24dp"
     >
 
     <TextView style="@style/tv_standard_gray"
-        android:id="@+id/textView1"
+        android:id="@+id/MatchNumberTextView"
         android:layout_margintop="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:text="@string/match_number" />
     
     <EditText
-        android:id="@+id/EdittextView3"
+        android:id="@+id/MatchNumber"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_vertical"
@@ -30,7 +31,7 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TeamNumbertextView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/weighted"
         android:layout_gravity="center_vertical"
@@ -39,10 +40,10 @@
         android:layout_marginRight="@dimen/large_margin"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:text="@string/team_number" />
 
     <EditText
-        android:id="@+id/EdittextView4"
+        android:id="@+id/TeamNumber"
         android:layout_width="match_parent"
         android:layout_height="@dimen/weighted"
         android:layout_gravity="center_vertical"
@@ -53,12 +54,17 @@
         android:layout_weight="3"
         android:text="EditTextView"
         />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxl_margin"
+        />
     <Button style="@style/btn_standard_white"
         android:layout_height="@dimen/weighted"
         android:layout_weight="6"
-        android:text="Button"
-        />
+        android:text="@string/start"
+        android:id="@+id/start"
+        android:onClick="startNextActivity"
+        tools:ignore="OnClick" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -69,6 +75,6 @@
         android:layout_marginRight="@dimen/large_margin"
         android:layout_marginBottom="20dp"
         android:layout_weight="6"
-        android:text="Button"
+        android:src="@drawable/cc_logo"
         />
 </LinearLayout>
